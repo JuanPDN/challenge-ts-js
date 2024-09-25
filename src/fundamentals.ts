@@ -8,8 +8,8 @@ there shouldn't be a space at the beginning or the end of the sentence!
 
 
 const smash = (words: Array<string>): string => {
-    const sentence = words.join(" ")
-    return sentence
+
+    return ""
 }
 
 export { smash }
