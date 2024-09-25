@@ -12,4 +12,4 @@ Este repositorio contiene una serie de ejercicios diseñados para mejorar tus ha
 
 1. Clona este repositorio en tu máquina local.
    ```bash
-   git clone https://github.com/tu_usuario/nombre_del_repositorio.git](https://github.com/JuanPDN/challenge-ts-js
+   git clone https://github.com/JuanPDN/challenge-ts-js
