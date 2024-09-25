@@ -9,8 +9,8 @@ Example:
 ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'*/
 
 const smash = (words: Array<string>): string => {
-    // Your code here
-    return ""
+    const sentence = words.join(" ")
+    return sentence
 }
 
 /*
