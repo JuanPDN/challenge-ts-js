@@ -24,8 +24,11 @@ Your points are not included in the array of your class's points. Do not forget 
 */
 
 const betterThanAverage = (classPoints: number[], yourPoints: number): boolean => {
-    // Your code here
-    return true
+
+    classPoints.push(yourPoints)
+    const average = classPoints.reduce((prev, num) => prev + num) / classPoints.length
+
+    return yourPoints > average
 }
 
 export { smash, betterThanAverage }
