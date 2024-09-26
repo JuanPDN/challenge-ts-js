@@ -36,3 +36,14 @@ Write a code that gives out the total amount for different days(d).
 4. **Reverse list**
 
 In this exercise you will create a function that takes in a list and returns a list with the reverse order.
+
+5. **Convert number to reversed array of digits**
+
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+Example(Input => Output):
+
+```bash
+35231 => [1,3,2,5,3]
+0 => [0]
+```

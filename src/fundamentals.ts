@@ -26,4 +26,10 @@ const reverseList = (list: number[]): number[] => {
     return []
 }
 
-export { smash, betterThanAverage, rentalCarCost, reverseList }
+// Exercise 5
+
+const digitize = (n: number): Array<number> => {
+    // Your solution here
+    return []
+}
+export { smash, betterThanAverage, rentalCarCost, reverseList, digitize }
