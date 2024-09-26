@@ -32,4 +32,4 @@ const reverseList = (list: number[]): number[] => {
 
 
 
-export { smash, betterThanAverage, rentalCarCost }
+export { smash, betterThanAverage, rentalCarCost, reverseList }
