@@ -47,9 +47,13 @@ Write a code that gives out the total amount for different days(d).
 */
 
 const rentalCarCost = (d: number): number => {
-    // Your solution here
-    return 0
+    const total = d * 40
+    const discount = (d >= 7) ? 50 : (d >= 3) ? 20 : 0
+
+    return total - discount
 }
+
+
 
 
 export { smash, betterThanAverage, rentalCarCost }
