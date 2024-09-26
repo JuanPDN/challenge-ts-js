@@ -66,7 +66,7 @@ describe("reverseList", function () {
 });
 
 describe("Convert number to reversed array of digits", () => {
-    it("Conver number", () => {
+    it("Convert number to array", () => {
         expect(digitize(35231)).toEqual([1, 3, 2, 5, 3]);
         expect(digitize(0)).toEqual([0]);
     });

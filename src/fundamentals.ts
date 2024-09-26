@@ -33,12 +33,12 @@ const reverseList = (list: number[]): number[] => {
     return reversed
 }
 
-
-
 // Exercise 5
 
 const digitize = (n: number): Array<number> => {
-    // Your solution here
-    return []
+    const convertToArray = Array.from(String(n), (n) => Number(n))
+    const reversed = convertToArray.reverse()
+
+    return reversed
 }
 export { smash, betterThanAverage, rentalCarCost, reverseList, digitize }
