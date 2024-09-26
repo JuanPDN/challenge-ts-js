@@ -19,5 +19,9 @@ const rentalCarCost = (d: number): number => {
     return 0
 }
 
+const reverseList = (list: number[]): number[] => {
+    // Your solution here
+    return []
+}
 
-export { smash, betterThanAverage, rentalCarCost }
+export { smash, betterThanAverage, rentalCarCost, reverseList }
