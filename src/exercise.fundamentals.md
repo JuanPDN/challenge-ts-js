@@ -32,3 +32,7 @@ Every day you rent the car costs $40. If you rent the car for 7 or more days, yo
 Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
 
 Write a code that gives out the total amount for different days(d).
+
+4. **Reverse list**
+
+In this exercise you will create a function that takes in a list and returns a list with the reverse order.

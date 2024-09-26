@@ -1,4 +1,4 @@
-import { smash, betterThanAverage, rentalCarCost } from '../fundamentals'
+import { smash, betterThanAverage, rentalCarCost, reverseList } from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -55,5 +55,12 @@ describe("Rental Car Cost", () => {
         expect(rentalCarCost(8)).toBe(270);
         expect(rentalCarCost(9)).toBe(310);
         expect(rentalCarCost(10)).toBe(350);
+    });
+});
+
+describe("reverseList", function () {
+    it("should reverse some sample arrays", function () {
+        expect(reverseList([1, 2, 3, 4])).toBe([4, 3, 2, 1]);
+        expect(reverseList([3, 1, 5, 4])).toBe([4, 5, 1, 3]);
     });
 });
