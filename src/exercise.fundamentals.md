@@ -1,4 +1,4 @@
-#Exercises
+# Exercises
 
 1. **Sentence Smash**
 
