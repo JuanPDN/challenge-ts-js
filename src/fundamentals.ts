@@ -24,6 +24,11 @@ const rentalCarCost = (d: number): number => {
     return total - discount
 }
 
+//Exercise 4
+const reverseList = (list: number[]): number[] => {
+    // Your solution here
+    return []
+}
 
 
 
