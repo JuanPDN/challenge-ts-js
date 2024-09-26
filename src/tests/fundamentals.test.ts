@@ -1,4 +1,4 @@
-import { smash, betterThanAverage, rentalCarCost, reverseList } from '../fundamentals'
+import { smash, betterThanAverage, rentalCarCost, reverseList, digitize } from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -62,5 +62,12 @@ describe("reverseList", function () {
     it("should reverse some sample arrays", function () {
         expect(reverseList([1, 2, 3, 4])).toEqual([4, 3, 2, 1]);
         expect(reverseList([3, 1, 5, 4])).toEqual([4, 5, 1, 3]);
+    });
+});
+
+describe("Convert number to reversed array of digits", () => {
+    it("Conver number", () => {
+        expect(digitize(35231)).toEqual([1, 3, 2, 5, 3]);
+        expect(digitize(0)).toEqual([0]);
     });
 });
