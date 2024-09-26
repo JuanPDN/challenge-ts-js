@@ -37,7 +37,7 @@ describe("Better Than Average", () => {
     });
 })
 
-describe("Regular Tests:", function () {
+describe("Rental Car Cost", function () {
     it("Should work for under 3 days:", function () {
         expect(rentalCarCost(1)).toBe(40);
         expect(rentalCarCost(2)).toBe(80);
