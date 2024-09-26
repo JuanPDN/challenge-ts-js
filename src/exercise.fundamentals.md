@@ -15,7 +15,6 @@ Example:
 2. **How good are you really?**
 
 You receive an array with your peers' test scores. Now calculate the average and compare your score!
-
 Return true if you're better, else false!
 
 Note:
