@@ -60,7 +60,7 @@ describe("Rental Car Cost", () => {
 
 describe("reverseList", function () {
     it("should reverse some sample arrays", function () {
-        expect(reverseList([1, 2, 3, 4])).toBe([4, 3, 2, 1]);
-        expect(reverseList([3, 1, 5, 4])).toBe([4, 5, 1, 3]);
+        expect(reverseList([1, 2, 3, 4])).toEqual([4, 3, 2, 1]);
+        expect(reverseList([3, 1, 5, 4])).toEqual([4, 5, 1, 3]);
     });
 });

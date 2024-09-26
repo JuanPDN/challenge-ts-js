@@ -27,8 +27,11 @@ const rentalCarCost = (d: number): number => {
 //Exercise 4
 
 const reverseList = (list: number[]): number[] => {
-    // Your solution here
-    return []
+    const reversed = list.reverse()
+    console.log(reversed);
+
+
+    return reversed
 }
 
 
