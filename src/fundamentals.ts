@@ -42,8 +42,15 @@ const rps = (p1: string, p2: string): string => {
 
 //Exercise 7
 
-function filter_list(list: Array<any>): number[] {
+const filter_list = (list: Array<any>): number[] => {
     //Your solution here
     return [];
 }
-export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list };
+
+//Exercise 8
+
+const createPhoneNumber = (numbers: number[]): string => {
+    //Your solution here
+    return ""
+}
+export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber };

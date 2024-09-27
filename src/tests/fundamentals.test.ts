@@ -1,4 +1,4 @@
-import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list } from '../fundamentals'
+import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber } from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -99,5 +99,13 @@ describe("Filter list", () => {
         expect(filter_list([1, 2, 'a', 'b'])).toEqual([1, 2]);
         expect(filter_list([1, 'a', 'b', 0, 15])).toEqual([1, 0, 15]);
         expect(filter_list([1, 2, 'aasf', '1', '123', 123])).toEqual([1, 2, 123]);
+    });
+});
+
+describe('Create Phone Number', () => {
+    it('Should create phone number', () => {
+        expect(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])).toBe("(123) 456-7890");
+        expect(createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])).toBe("(111) 111-1111");
+        expect(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])).toBe("(123) 456-7890");
     });
 });
