@@ -1,4 +1,4 @@
-import { smash, betterThanAverage, rentalCarCost, reverseList, digitize } from '../fundamentals'
+import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps } from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -69,5 +69,27 @@ describe("Convert number to reversed array of digits", () => {
     it("Convert number to array", () => {
         expect(digitize(35231)).toEqual([1, 3, 2, 5, 3]);
         expect(digitize(0)).toEqual([0]);
+    });
+});
+
+describe('rock paper scissors', function () {
+    const getMsg = (n: number) => `Player ${n} won!`;
+
+    it('player 1 win', function () {
+        expect(rps('rock', 'scissors')).toBe(getMsg(1));
+        expect(rps('scissors', 'paper')).toBe(getMsg(1));
+        expect(rps('paper', 'rock')).toBe(getMsg(1));
+    });
+
+    it('player 2 win', function () {
+        expect(rps('scissors', 'rock')).toBe(getMsg(2));
+        expect(rps('paper', 'scissors')).toBe(getMsg(2));
+        expect(rps('rock', 'paper')).toBe(getMsg(2));
+    });
+
+    it('draw', function () {
+        expect(rps('rock', 'rock')).toBe('Draw!');
+        expect(rps('scissors', 'scissors')).toBe('Draw!');
+        expect(rps('paper', 'paper')).toBe('Draw!');
     });
 });
