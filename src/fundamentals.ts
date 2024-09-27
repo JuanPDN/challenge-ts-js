@@ -41,4 +41,11 @@ const digitize = (n: number): Array<number> => {
 
     return reversed
 }
-export { smash, betterThanAverage, rentalCarCost, reverseList, digitize }
+
+//Exercise 6
+
+const rps = (p1: string, p2: string): string => {
+    //Your solution here
+    return ""
+};
+export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps }
