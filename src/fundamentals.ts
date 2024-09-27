@@ -39,4 +39,11 @@ const rps = (p1: string, p2: string): string => {
     //Your solution here
     return ""
 };
-export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps }
+
+//Exercise 7
+
+function filter_list(list: Array<any>): number[] {
+    //Your solution here
+    return [];
+}
+export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list };

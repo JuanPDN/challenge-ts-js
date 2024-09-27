@@ -1,4 +1,4 @@
-import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps } from '../fundamentals'
+import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list } from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -91,5 +91,13 @@ describe('rock paper scissors', function () {
         expect(rps('rock', 'rock')).toBe('Draw!');
         expect(rps('scissors', 'scissors')).toBe('Draw!');
         expect(rps('paper', 'paper')).toBe('Draw!');
+    });
+});
+
+describe("Filter list", () => {
+    it("Should return filtered list", () => {
+        expect(filter_list([1, 2, 'a', 'b'])).toEqual([1, 2]);
+        expect(filter_list([1, 'a', 'b', 0, 15])).toEqual([1, 0, 15]);
+        expect(filter_list([1, 2, 'aasf', '1', '123', 123])).toEqual([1, 2, 123]);
     });
 });
