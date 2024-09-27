@@ -1,4 +1,8 @@
-import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber, numberOfPeopple } from '../fundamentals'
+import {
+    smash, betterThanAverage, rentalCarCost,
+    reverseList, digitize, rps, filter_list,
+    createPhoneNumber, numberOfPeopple, findOutlier
+} from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -118,3 +122,13 @@ describe("Number of People in the Bus", () => {
         expect(numberOfPeopple([[0, 0]])).toBe(0);
     });
 });
+
+describe("Find The Parity Outlier", () => {
+    it('Should return the outlier', function () {
+        expect(findOutlier([0, 1, 2])).toBe(1);
+        expect(findOutlier([1, 2, 3])).toBe(2);
+        expect(findOutlier([2, 6, 8, 10, 3])).toBe(3);
+        expect(findOutlier([0, 0, 3, 0, 0])).toBe(3);
+        expect(findOutlier([1, 1, 0, 1, 1])).toBe(0);
+    });
+})

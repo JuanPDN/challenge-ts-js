@@ -8,7 +8,7 @@ there shouldn't be a space at the beginning or the end of the sentence!
 
 Example:
 
-```bash
+```
 ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
 ```
 
@@ -43,7 +43,7 @@ Given a random non-negative number, you have to return the digits of this number
 
 Example(Input => Output):
 
-```bash
+```
 35231 => [1,3,2,5,3]
 0 => [0]
 ```
@@ -54,7 +54,7 @@ Let's play! You have to return which player won! In case of a draw return `Draw!
 
 Examples(Input1, Input2 --> Output):
 
-```bash
+```
 "scissors", "paper" --> "Player 1 won!"
 "scissors", "rock" --> "Player 2 won!"
 "paper", "paper" --> "Draw!"
@@ -63,7 +63,7 @@ Examples(Input1, Input2 --> Output):
 
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
-```bash
+```
 filter_list([1,2,'a','b']) == [1,2]
 filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
@@ -73,7 +73,7 @@ filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 
 Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
 
-```bash
+```
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
 ```
 
@@ -94,3 +94,15 @@ Take a look on the test cases.
 Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the returned integer can't be negative.
 
 The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
+
+10. **Find The Parity Outlier**
+
+You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" `N`.
+
+Examples
+
+```
+[2, 4, 0, 100, 4, 11, 2602, 36] -->  11 (the only odd number)
+
+[160, 3, 1719, 19, 11, 13, -21] --> 160 (the only even number)
+```
