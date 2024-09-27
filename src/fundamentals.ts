@@ -72,8 +72,9 @@ const createPhoneNumber = (numbers: number[]): string => {
 //Exercise 9
 
 const numberOfPeopple = (busStops: Array<number[]>): number => {
-    //Your solution here
-    return 0
+    const totalPeopple = busStops.reduce((n, [up, down]) => n + up - down, 0)
+
+    return totalPeopple
 }
 
 export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber, numberOfPeopple };
