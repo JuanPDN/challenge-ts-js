@@ -77,4 +77,22 @@ const numberOfPeopple = (busStops: Array<number[]>): number => {
     return totalPeopple
 }
 
-export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber, numberOfPeopple };
+//Excercise 10
+
+const findOutlier = (integers: number[]): number => {
+    //Your code here
+    return 0
+}
+
+export {
+    smash,
+    betterThanAverage,
+    rentalCarCost,
+    reverseList,
+    digitize,
+    rps,
+    filter_list,
+    createPhoneNumber,
+    numberOfPeopple,
+    findOutlier
+};
