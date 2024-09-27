@@ -1,4 +1,4 @@
-import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber } from '../fundamentals'
+import { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber, numberOfPeopple } from '../fundamentals'
 
 
 describe("Smash words", () => {
@@ -107,5 +107,14 @@ describe('Create Phone Number', () => {
         expect(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])).toBe("(123) 456-7890");
         expect(createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])).toBe("(111) 111-1111");
         expect(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])).toBe("(123) 456-7890");
+    });
+});
+
+describe("Number of People in the Bus", () => {
+    it("Testing for fixed tests", () => {
+        expect(numberOfPeopple([[10, 0], [3, 5], [5, 8]])).toBe(5);
+        expect(numberOfPeopple([[3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10]])).toBe(17);
+        expect(numberOfPeopple([[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]])).toBe(21);
+        expect(numberOfPeopple([[0, 0]])).toBe(0);
     });
 });

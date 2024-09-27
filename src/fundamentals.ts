@@ -69,4 +69,11 @@ const createPhoneNumber = (numbers: number[]): string => {
     return transforNumber
 }
 
-export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber };
+//Exercise 9
+
+const numberOfPeopple = (busStops: Array<number[]>): number => {
+    //Your solution here
+    return 0
+}
+
+export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber, numberOfPeopple };
