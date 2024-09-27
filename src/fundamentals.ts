@@ -63,7 +63,10 @@ const filter_list = (list: Array<any>): number[] => {
 //Exercise 8
 
 const createPhoneNumber = (numbers: number[]): string => {
-    //Your solution here
-    return ""
+    const phoneNumber = numbers.join("")
+    const transforNumber = `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, phoneNumber.length)}`
+
+    return transforNumber
 }
+
 export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list, createPhoneNumber };
