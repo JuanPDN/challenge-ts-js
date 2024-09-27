@@ -55,7 +55,8 @@ const rps = (p1: string, p2: string): string => {
 //Exercise 7
 
 function filter_list(list: Array<any>): number[] {
-    //Your solution here
-    return [];
+    const newList = list.filter((e) => typeof e === "number")
+
+    return newList;
 }
 export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps, filter_list };
