@@ -80,8 +80,11 @@ const numberOfPeopple = (busStops: Array<number[]>): number => {
 //Excercise 10
 
 const findOutlier = (integers: number[]): number => {
-    //Your code here
-    return 0
+    const odd = integers.filter((e) => e % 2 === 0)
+    const even = integers.filter((e) => e % 2 !== 0)
+
+    return odd.length > even.length ? Number(even) : Number(odd)
+
 }
 
 export {
