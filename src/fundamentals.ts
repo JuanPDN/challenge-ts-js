@@ -45,7 +45,10 @@ const digitize = (n: number): Array<number> => {
 //Exercise 6
 
 const rps = (p1: string, p2: string): string => {
-    //Your solution here
-    return ""
+
+    const rules: { [key: string]: string } = { rock: "scissors", scissors: "paper", paper: "rock" }
+    const result = p1 === p2 ? "Draw!" : rules[p1] === p2 ? "Player 1 won!" : "Player 2 won!"
+
+    return result
 };
 export { smash, betterThanAverage, rentalCarCost, reverseList, digitize, rps }
