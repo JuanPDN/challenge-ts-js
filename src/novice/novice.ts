@@ -6,4 +6,12 @@ const arrayDiff = (a: number[], b: number[]): number[] => {
     return newArray
 }
 
-export { arrayDiff }
+//Exercise 2
+
+const toCamelCase = (str: string): string => {
+    //Your code here
+    return ""
+
+}
+
+export { arrayDiff, toCamelCase }

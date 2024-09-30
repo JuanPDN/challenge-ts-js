@@ -1,4 +1,4 @@
-import { arrayDiff } from "../novice";
+import { arrayDiff, toCamelCase } from "../novice";
 
 describe("arrayDiff", () => {
     describe("should remove all values from list a, which are present in list b keeping their order", () => {
@@ -19,6 +19,23 @@ describe("arrayDiff", () => {
         })
         it("a was [1,2,3], b was [1,2]", () => {
             expect(arrayDiff([1, 2, 3], [1, 2])).toEqual([3]);
+        })
+    })
+});
+
+describe("toCamelCase", () => {
+    describe("should return correct value", () => {
+        it("An empty string was provided but not returned", () => {
+            expect(toCamelCase('')).toEqual('')
+        })
+        it("toCamelCase('the_stealth_warrior') did not return correct value", () => {
+            expect(toCamelCase('the_stealth_warrior')).toEqual('theStealthWarrior')
+        })
+        it("toCamelCase('The-Stealth-Warrior') did not return correct value", () => {
+            expect(toCamelCase('The-Stealth-Warrior')).toEqual('TheStealthWarrior')
+        })
+        it("toCamelCase('A-B-C') did not return correct value", () => {
+            expect(toCamelCase('A-B-C')).toEqual('ABC')
         })
     })
 });
