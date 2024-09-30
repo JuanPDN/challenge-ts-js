@@ -22,4 +22,11 @@ const pigIt = (a: string): string => {
     return newString
 }
 
-export { arrayDiff, toCamelCase, pigIt }
+//Exercise 4
+
+const domainName = (url: string): string => {
+    //your code here
+    return ""
+}
+
+export { arrayDiff, toCamelCase, pigIt, domainName }
