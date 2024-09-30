@@ -1,4 +1,4 @@
-import { arrayDiff, toCamelCase, pigIt } from "../novice";
+import { arrayDiff, toCamelCase, pigIt, domainName } from "../novice";
 
 describe("arrayDiff", () => {
     describe("should remove all values from list a, which are present in list b keeping their order", () => {
@@ -50,6 +50,23 @@ describe("Simple Pig Latin", () => {
         })
         it("should return hisTay siay ymay tringsay", () => {
             expect(pigIt('This is my string')).toEqual('hisTay siay ymay tringsay')
+        })
+    })
+})
+
+describe("domainName", () => {
+    describe("should return correct value", () => {
+        it("should return google", () => {
+            expect(domainName('http://google.com')).toEqual('google')
+        })
+        it("should return google", () => {
+            expect(domainName('http://google.co.jp')).toEqual('google')
+        })
+        it("should return xakep", () => {
+            expect(domainName('www.xakep.ru')).toEqual('xakep')
+        })
+        it("should return youtube", () => {
+            expect(domainName('https://youtube.com')).toEqual('youtube')
         })
     })
 })
