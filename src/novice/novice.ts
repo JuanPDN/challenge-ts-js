@@ -25,8 +25,9 @@ const pigIt = (a: string): string => {
 //Exercise 4
 
 const domainName = (url: string): string => {
-    //your code here
-    return ""
+    const domain = url.match(/(?:https?:\/\/)?(www\.)?([^\.]+)/)
+
+    return domain ? domain[2] : ""
 }
 
 export { arrayDiff, toCamelCase, pigIt, domainName }
