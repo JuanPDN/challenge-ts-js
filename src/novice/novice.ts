@@ -17,8 +17,9 @@ const toCamelCase = (str: string): string => {
 //Exercise 3
 
 const pigIt = (a: string): string => {
-    //Your code here
-    return ""
+    const newString = a.replace(/\b(\w)(\w*)/g, '$2$1ay')
+
+    return newString
 }
 
 export { arrayDiff, toCamelCase, pigIt }
