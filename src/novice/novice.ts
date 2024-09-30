@@ -9,9 +9,9 @@ const arrayDiff = (a: number[], b: number[]): number[] => {
 //Exercise 2
 
 const toCamelCase = (str: string): string => {
-    //Your code here
-    return ""
+    const camelCase = str.replace(/[-_](.)/g, (_, char) => char.toUpperCase())
 
+    return camelCase
 }
 
 export { arrayDiff, toCamelCase }
