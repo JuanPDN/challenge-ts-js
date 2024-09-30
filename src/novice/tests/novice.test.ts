@@ -1,4 +1,4 @@
-import { arrayDiff, toCamelCase } from "../novice";
+import { arrayDiff, toCamelCase, pigIt } from "../novice";
 
 describe("arrayDiff", () => {
     describe("should remove all values from list a, which are present in list b keeping their order", () => {
@@ -39,3 +39,17 @@ describe("toCamelCase", () => {
         })
     })
 });
+
+describe("Simple Pig Latin", () => {
+    describe("should return correct value", () => {
+        it("should return correct value", () => {
+            expect(pigIt('')).toEqual('')
+        })
+        it("should return igPay atinlay siay oolcay", () => {
+            expect(pigIt('Pig latin is cool')).toEqual('igPay atinlay siay oolcay')
+        })
+        it("should return hisTay siay ymay tringsay", () => {
+            expect(pigIt('This is my string')).toEqual('hisTay isay myay tringsay')
+        })
+    })
+})
