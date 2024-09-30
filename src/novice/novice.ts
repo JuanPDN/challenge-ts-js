@@ -13,4 +13,11 @@ const toCamelCase = (str: string): string => {
 
 }
 
-export { arrayDiff, toCamelCase }
+//Exercise 3
+
+const pigIt = (a: string): string => {
+    //Your code here
+    return ""
+}
+
+export { arrayDiff, toCamelCase, pigIt }
