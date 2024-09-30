@@ -49,7 +49,7 @@ describe("Simple Pig Latin", () => {
             expect(pigIt('Pig latin is cool')).toEqual('igPay atinlay siay oolcay')
         })
         it("should return hisTay siay ymay tringsay", () => {
-            expect(pigIt('This is my string')).toEqual('hisTay isay myay tringsay')
+            expect(pigIt('This is my string')).toEqual('hisTay siay ymay tringsay')
         })
     })
 })
