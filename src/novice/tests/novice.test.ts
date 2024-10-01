@@ -1,4 +1,4 @@
-import { arrayDiff, toCamelCase, pigIt, domainName } from "../novice";
+import { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag } from "../novice";
 
 describe("arrayDiff", () => {
     describe("should remove all values from list a, which are present in list b keeping their order", () => {
@@ -70,3 +70,34 @@ describe("domainName", () => {
         })
     })
 })
+
+describe("Novice Tests", () => {
+    it("Expected an empty string to return false", () => {
+        expect(generateHashtag("")).toEqual(false)
+    })
+    it("Still an empty string", () => {
+        expect(generateHashtag(" ".repeat(200))).toEqual(false)
+    })
+    it("Expected a Hashtag (#) at the beginning.", () => {
+        expect(generateHashtag("Do We have A Hashtag")).toEqual("#DoWeHaveAHashtag")
+    })
+    it("Should handle a single word.", () => {
+        expect(generateHashtag("Codewars")).toEqual("#Codewars")
+    })
+    it("Should remove spaces.", () => {
+        expect(generateHashtag("Codewars Is Nice")).toEqual("#CodewarsIsNice")
+    })
+    it("Should capitalize first letters of words.", () => {
+        expect(generateHashtag("codewars is nice")).toEqual("#CodewarsIsNice")
+    })
+    it("Should work", () => {
+        expect(generateHashtag("code" + " ".repeat(140) + "wars")).toEqual("#CodeWars")
+    })
+    it("Should return false if the final word is longer than 140 chars.", () => {
+        expect(generateHashtag("a".repeat(139))).toEqual(false)
+    })
+    it("Too long", () => {
+        expect(generateHashtag("a".repeat(140))).toEqual(false)
+    })
+})
+

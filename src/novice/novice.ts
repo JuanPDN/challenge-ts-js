@@ -30,4 +30,11 @@ const domainName = (url: string): string => {
     return domain ? domain[2] : ""
 }
 
-export { arrayDiff, toCamelCase, pigIt, domainName }
+//Exercise 5
+
+const generateHashtag = (str: string): string => {
+    //your code here
+    return ""
+}
+
+export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag }
