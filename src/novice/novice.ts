@@ -40,6 +40,8 @@ const generateHashtag = (str: string): string | boolean => {
     return (newString.length === 0) ? false : (newString.length >= 140) ? false : `#${newString}`
 }
 
+//Exercise 6
+
 const countLetters = (str: string): { [keys: string]: number } => {
     const letters: { [keys: string]: number } = {}
     for (const char of str) {
