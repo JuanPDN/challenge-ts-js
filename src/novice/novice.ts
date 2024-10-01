@@ -36,7 +36,7 @@ const generateHashtag = (str: string): string => {
 
 //Exercise 6
 
-const countLetters = (string: string) => {
+const countLetters = (string: string): { [key: string]: number } => {
     //Your code here
     return {};
 }
