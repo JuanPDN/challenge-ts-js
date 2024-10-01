@@ -32,9 +32,12 @@ const domainName = (url: string): string => {
 
 //Exercise 5
 
-const generateHashtag = (str: string): string => {
-    //your code here
-    return ""
+const generateHashtag = (str: string): string | boolean => {
+    const newString =
+        str.replace(/\b\w/g, (char) => char.toUpperCase())
+            .replace(/\s/g, '')
+
+    return (newString.length === 0) ? false : (newString.length >= 140) ? false : `#${newString}`
 }
 
 export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag }
