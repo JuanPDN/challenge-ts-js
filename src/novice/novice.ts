@@ -23,15 +23,19 @@ const pigIt = (a: string): string => {
 //Exercise 4
 
 const domainName = (url: string): string => {
-    //your code here
+    //Your code here
     return ""
 }
 
 //Exercise 5
 
 const generateHashtag = (str: string): string => {
-    //your code here
+    //Your code here
     return ""
 }
 
-export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag }
+const countLetters = (string: string) => {
+    //Your code here
+    return {};
+}
+export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag, countLetters }
