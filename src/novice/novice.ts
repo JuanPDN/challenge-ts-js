@@ -40,4 +40,8 @@ const generateHashtag = (str: string): string | boolean => {
     return (newString.length === 0) ? false : (newString.length >= 140) ? false : `#${newString}`
 }
 
-export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag }
+const countLetters = (string: string) => {
+    //Your code here
+    return {};
+}
+export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag, countLetters }

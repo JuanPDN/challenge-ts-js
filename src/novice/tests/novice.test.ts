@@ -1,4 +1,4 @@
-import { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag } from "../novice";
+import { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag, countLetters } from "../novice";
 
 describe("arrayDiff", () => {
     describe("should remove all values from list a, which are present in list b keeping their order", () => {
@@ -101,3 +101,12 @@ describe("The Hashtag Generator", () => {
     })
 })
 
+describe("countLetters", () => {
+    it("should return correct value", () => {
+        expect(countLetters('')).toEqual({})
+        expect(countLetters('a')).toEqual({ a: 1 })
+        expect(countLetters('ab')).toEqual({ a: 1, b: 1 })
+        expect(countLetters('aba')).toEqual({ a: 2, b: 1 })
+        expect(countLetters('ABC')).toEqual({ A: 1, B: 1, C: 1 })
+    })
+})
