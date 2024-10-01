@@ -71,7 +71,7 @@ describe("domainName", () => {
     })
 })
 
-describe("Novice Tests", () => {
+describe("The Hashtag Generator", () => {
     it("Expected an empty string to return false", () => {
         expect(generateHashtag("")).toEqual(false)
     })
