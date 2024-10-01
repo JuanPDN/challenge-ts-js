@@ -71,7 +71,7 @@ describe("domainName", () => {
     })
 })
 
-describe("Novice Tests", () => {
+describe("The Hashtag Generator", () => {
     it("Expected an empty string to return false", () => {
         expect(generateHashtag("")).toEqual(false)
     })
@@ -94,7 +94,7 @@ describe("Novice Tests", () => {
         expect(generateHashtag("code" + " ".repeat(140) + "wars")).toEqual("#CodeWars")
     })
     it("Should return false if the final word is longer than 140 chars.", () => {
-        expect(generateHashtag("a".repeat(139))).toEqual(false)
+        expect(generateHashtag("a".repeat(140))).toEqual(false)
     })
     it("Too long", () => {
         expect(generateHashtag("a".repeat(140))).toEqual(false)
