@@ -34,6 +34,8 @@ const generateHashtag = (str: string): string => {
     return ""
 }
 
+//Exercise 6
+
 const countLetters = (string: string) => {
     //Your code here
     return {};
