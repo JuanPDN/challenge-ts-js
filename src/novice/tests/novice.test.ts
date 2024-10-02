@@ -115,12 +115,12 @@ describe("countLetters", () => {
 })
 
 describe("Replace With Alphabet Position", () => {
-    it("should return correct value", () => {
+    it("should return correct value to The sunset sets at twelve o' clock.", () => {
         expect(alphabetPosition("The sunset sets at twelve o' clock."))
             .toEqual("20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11")
     })
-    it("should return correct value", () => {
-        expect(alphabetPosition("The narwhal battles mostly at midnight."))
-            .toEqual("20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 10 6 7 2 13")
+    it("should return correct value to The narwhal bacons at midnight.", () => {
+        expect(alphabetPosition("The narwhal bacons at midnight."))
+            .toEqual("20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20")
     })
 })
