@@ -2,7 +2,7 @@
 
 const reverseString = (str: string): string => {
     //Your code here
-    return ""; // reverse this!
+    return "";
 }
 
 export {
