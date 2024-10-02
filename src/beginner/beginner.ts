@@ -1,8 +1,10 @@
 //Exercise 1
 
 const reverseString = (str: string): string => {
-    //Your code here
-    return "";
+    const newStr = Array.from(str)
+    const reverse = newStr.reverse().join("");
+
+    return reverse
 }
 
 export {
