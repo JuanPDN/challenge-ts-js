@@ -8,8 +8,8 @@ const reverseString = (str: string): string => {
 }
 
 const endsWith = (str: string, ending: string): boolean => {
-    //Your code here
-    return false;
+
+    return str.endsWith(ending);
 }
 
 export {
