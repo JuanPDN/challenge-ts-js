@@ -7,6 +7,12 @@ const reverseString = (str: string): string => {
     return reverse
 }
 
+const endsWith = (str: string, ending: string): boolean => {
+    //Your code here
+    return false;
+}
+
 export {
-    reverseString
+    reverseString,
+    endsWith
 }

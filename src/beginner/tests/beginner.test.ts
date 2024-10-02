@@ -1,4 +1,4 @@
-import { reverseString } from "../beginner";
+import { reverseString, endsWith } from "../beginner";
 
 describe("Reverse String", function () {
     it("Should return a string reversed", function () {
@@ -8,3 +8,11 @@ describe("Reverse String", function () {
         expect(reverseString('h')).toEqual('h');
     });
 });
+
+describe("String ends with?", () => {
+    it("Should return true or false", () => {
+        expect(endsWith('abcde', 'cde')).toBe(true)
+        expect(endsWith('abcde', 'abc')).toBe(false)
+        expect(endsWith('abc', '')).toBe(true)
+    })
+})
