@@ -5,6 +5,12 @@ const reverseString = (str: string): string => {
     return "";
 }
 
+const endsWith = (str: string, ending: string): boolean => {
+    //Your code here
+    return false;
+}
+
 export {
-    reverseString
+    reverseString,
+    endsWith
 }
