@@ -1,4 +1,7 @@
-import { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag, countLetters } from "../novice";
+import {
+    arrayDiff, toCamelCase, pigIt, domainName,
+    generateHashtag, countLetters, alphabetPosition
+} from "../novice";
 
 describe("arrayDiff", () => {
     describe("should remove all values from list a, which are present in list b keeping their order", () => {
@@ -108,5 +111,16 @@ describe("countLetters", () => {
         expect(countLetters('ab')).toEqual({ a: 1, b: 1 })
         expect(countLetters('aba')).toEqual({ a: 2, b: 1 })
         expect(countLetters('ABC')).toEqual({ A: 1, B: 1, C: 1 })
+    })
+})
+
+describe("Replace With Alphabet Position", () => {
+    it("should return correct value", () => {
+        expect(alphabetPosition("The sunset sets at twelve o' clock."))
+            .toEqual("20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11")
+    })
+    it("should return correct value", () => {
+        expect(alphabetPosition("The narwhal battles mostly at midnight."))
+            .toEqual("20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 10 6 7 2 13")
     })
 })

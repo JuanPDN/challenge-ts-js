@@ -50,4 +50,20 @@ const countLetters = (str: string): { [keys: string]: number } => {
 
     return letters;
 }
-export { arrayDiff, toCamelCase, pigIt, domainName, generateHashtag, countLetters }
+
+//Exercise 7
+
+const alphabetPosition = (text: string): string => {
+    //Your code here
+    return text;
+}
+
+export {
+    arrayDiff,
+    toCamelCase,
+    pigIt,
+    domainName,
+    generateHashtag,
+    countLetters,
+    alphabetPosition
+}
