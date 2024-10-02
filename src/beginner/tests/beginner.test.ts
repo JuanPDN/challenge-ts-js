@@ -1,10 +1,10 @@
-import { solution } from "../beginner";
+import { reverseString } from "../beginner";
 
 describe("Reverse String", function () {
     it("Should return a string reversed", function () {
-        expect(solution('world')).toEqual('dlrow');
-        expect(solution('hello')).toEqual('olleh');
-        expect(solution('')).toEqual('');
-        expect(solution('h')).toEqual('h');
+        expect(reverseString('world')).toEqual('dlrow');
+        expect(reverseString('hello')).toEqual('olleh');
+        expect(reverseString('')).toEqual('');
+        expect(reverseString('h')).toEqual('h');
     });
 });
