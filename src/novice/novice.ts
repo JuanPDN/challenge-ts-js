@@ -54,7 +54,6 @@ const countLetters = (str: string): { [keys: string]: number } => {
 //Exercise 7
 
 const alphabetPosition = (text: string): string => {
-    //Your code here
     const newText = text.toLowerCase()
         .replace(/[.'\s]/g, '')
         .replace(/[a-z]/g, (match) => {
