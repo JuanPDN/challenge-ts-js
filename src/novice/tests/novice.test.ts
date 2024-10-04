@@ -1,6 +1,7 @@
 import {
     arrayDiff, toCamelCase, pigIt, domainName,
-    generateHashtag, countLetters, alphabetPosition
+    generateHashtag, countLetters, alphabetPosition,
+    alphanumeric
 } from "../novice";
 
 describe("arrayDiff", () => {
@@ -122,5 +123,16 @@ describe("Replace With Alphabet Position", () => {
     it("should return correct value to The narwhal bacons at midnight.", () => {
         expect(alphabetPosition("The narwhal bacons at midnight."))
             .toEqual("20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20")
+    })
+})
+
+describe("Alphanumeric", () => {
+    it("should return true", () => {
+        expect(alphanumeric('Mazinkaiser')).toEqual(true)
+        expect(alphanumeric('PassW0rd')).toEqual(true)
+    })
+    it("should return false", () => {
+        expect(alphanumeric('')).toEqual(false)
+        expect(alphanumeric('hello world_')).toEqual(false)
     })
 })
