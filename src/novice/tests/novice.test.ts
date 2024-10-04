@@ -132,7 +132,7 @@ describe("Alphanumeric", () => {
         expect(alphanumeric('PassW0rd')).toEqual(true)
     })
     it("should return false", () => {
-        expect(alphanumeric('')).toEqual(false)
+        expect(alphanumeric(' ')).toEqual(false)
         expect(alphanumeric('hello world_')).toEqual(false)
     })
 })

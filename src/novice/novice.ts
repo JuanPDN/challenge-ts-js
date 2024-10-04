@@ -66,8 +66,10 @@ const alphabetPosition = (text: string): string => {
 //Exercise 8
 
 const alphanumeric = (string: string): boolean => {
-    //Your code here
-    return false;
+    const regext = /^[a-zA-Z0-9]+$/
+    const isValidate = regext.test(string)
+
+    return isValidate
 }
 
 export {
