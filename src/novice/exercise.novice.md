@@ -91,4 +91,12 @@ Example:
 Input = "The sunset sets at twelve o' clock."
 Output = "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
 ```
+8. **Not very secure**
 
+In this example you have to validate if a user input string is alphanumeric. The given string is not nil/null/NULL/None, so you don't have to check that.
+
+The string has the following conditions to be alphanumeric:
+
+- At least one character ("" is not valid)
+- Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
+- No whitespaces / underscore

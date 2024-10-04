@@ -48,6 +48,13 @@ const alphabetPosition = (text: string): string => {
     return text;
 }
 
+//Exercise 8
+
+const alphanumeric = (string: string): boolean => {
+    //Your code here
+    return false;
+}
+
 export {
     arrayDiff,
     toCamelCase,
@@ -55,5 +62,6 @@ export {
     domainName,
     generateHashtag,
     countLetters,
-    alphabetPosition
+    alphabetPosition,
+    alphanumeric
 }
